@@ -1,0 +1,23 @@
+{
+  "name": "socialblade-creator-stats",
+  "version": "1.0.0",
+  "description": "Subscriber and follower history, 7/30/90-day gains and spike dates for YouTube, TikTok, Instagram and Twitch creators. Hosted MCP server, bring your MCPize key.",
+  "mcpServers": {
+    "socialblade-creator-stats": {
+      "httpUrl": "https://socialblade-creator-stats.mcpize.run/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCPIZE_API_KEY}"
+      },
+      "timeout": 120000
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "MCPize API key",
+      "description": "Your key for SocialBlade Creator Stats. Subscribe on MCPize (Free plan available) and copy the key from the server page.",
+      "envVar": "MCPIZE_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
